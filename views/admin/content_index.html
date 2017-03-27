@@ -1,0 +1,41 @@
+<!--继承-->
+{% extends 'layout.html' %}
+
+<!--重写模块-->
+{%block main%}
+
+<ol class="breadcrumb">
+    <li class="active"><a href="#">管理{}首页</a></li>
+    <li><span>内容列表</span></li>
+</ol>
+<h3>内容列表</h3>
+<table class="table table-hover">
+    <tr>
+        <td>ID</td>
+        <td>分类名称</td>
+        <td>标题</td>
+        <th>作者</th>
+        <td>添加时间</td>
+        <td>阅读数</td>
+        <td>操作</td>
+    </tr>
+    {%for content in contents %}
+        <tr>
+            <td>{{content._id.toString()}}</td>
+            <td>{{content.category.name}}</td>
+            <td>{{content.title}}</td>
+            <td>{{content.user.username}}</td>
+            <!--data('ymdhms') 年月日，十分秒 Y代表全部年份-->
+            <td>{{content.addTime|date('Y年m月d日  h:m:s',-8*60)}}</td>
+            <td>{{content.views}}</td>
+            <td>
+                <a href="/admin/content/edit?id={{content._id.toString()}}">修改</a>|
+                <a href="/admin/content/delete?id={{content._id.toString()}}">删除</a>
+            </td>
+        </tr>
+    {%endfor%}
+
+</table>
+
+{%include 'page.html'%}
+{%endblock%}

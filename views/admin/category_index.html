@@ -1,0 +1,33 @@
+<!--继承-->
+{% extends 'layout.html' %}
+
+<!--重写模块-->
+{%block main%}
+
+<ol class="breadcrumb">
+    <li class="active"><a href="#">管理首页</a></li>
+    <li><span>分类列表</span></li>
+</ol>
+
+<h3>分类列表</h3>
+<table class="table table-hover">
+    <tr>
+        <td>ID</td>
+        <td>分类名称</td>
+        <td>操作</td>
+    </tr>
+    {%for category in categories %}
+        <tr>
+            <td>{{category._id.toString()}}</td>
+            <td>{{category.name}}</td>
+            <td>
+                <a href="/admin/category/edit?id={{category._id.toString()}}">修改</a>|
+                <a href="/admin/category/delete?id={{category._id.toString()}}">删除</a>
+            </td>
+        </tr>
+    {%endfor%}
+
+</table>
+
+{%include 'page.html'%}
+{%endblock%}

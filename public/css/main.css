@@ -1,0 +1,124 @@
+.body-bg {
+    background: #eee;
+}
+.white-bg{
+    background: #fff;
+}
+.listBox {
+    background: #fff;
+    margin-bottom: 15px;
+}
+ul li{
+    float: left;
+    list-style: none;
+}
+.menu a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+a:hover{
+    text-decoration: none !important;
+}
+nav {
+    margin-bottom: 15px;
+}
+.listBox {
+    background: #fff;
+    border-radius: 4px;
+    padding: 10px 10px 20px 10px;
+}
+.listBox h4{
+    font-weight: 400;
+}
+.colInfo {
+    color: #07c1f9;
+}
+.function a {
+    border-radius: 4px;
+    padding: 5px 10px;
+    display: inline-block;
+    background: #fb4000;
+    color: #fff;
+    text-decoration: none;
+}
+.title {
+    margin:0px -7px 15px;
+    padding: 0px 5px;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+}
+.title span {
+    padding: 0 5px;
+    display: inline-block;
+    border-bottom: 2px solid #f4b000;
+    line-height: 30px;
+}
+.mainRight {
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+.colDefault {
+    text-align: center;
+}
+.colDefault span {
+    margin-right: 15px;
+}
+.dfn {
+    color: #333;
+}
+#registerBox a,#loginBox a{
+    margin-left: 10px;
+}
+
+/*f分页*/
+.pages {
+    padding: 5px 15px;
+    border-radius: 2px;
+}
+.pages div {
+    line-height: 25px;
+}
+
+.pager .pre {
+    text-align: left;
+}
+
+    /*按钮*/
+#messageBtn {
+    margin-top: 15px;
+}
+.focus {
+    border-bottom: 2px solid #fb4000;
+}
+.menu a:hover{
+    border-bottom: 2px solid #fb4000;
+}
+.bgRed {
+    margin-bottom: 20px;
+    width: 100%;
+    display: inline-block;
+    background: #fb4000;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+.message h4 .textLeft {
+    float: left;
+}
+.message h4{
+    overflow: hidden;
+    text-align: right;
+}
+.messageList .name {
+    overflow: hidden;
+    text-align: right;
+}
+.fl{
+    float: left;
+}
+.content {
+    margin-bottom: 20px;
+}

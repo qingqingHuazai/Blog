@@ -1,0 +1,35 @@
+<!--继承-->
+{% extends 'layout.html' %}
+
+<!--重写模块-->
+
+{%block main%}
+
+<ol class="breadcrumb">
+    <li><span>管理首页</span></li>
+    <li class="active"><a href="/"> 页面保存成功！</a></li>
+</ol>
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        成功信息
+    </div>
+    <div class="panel-footer">
+       <div>{{message}}</div>
+        <!--{%if url%}
+            <div>
+                <a href="{{url}}">返回上一步</a>
+            </div>
+        {%else%}
+            <div>
+                <a href="javascript:window.history.back()">返回上一步</a>
+            </div>
+        {%endif%}-->
+        <div>
+            <a href="{{url}}">点击这里跳转</a>
+        </div>
+    </div>
+
+</div>
+
+{%endblock%}
